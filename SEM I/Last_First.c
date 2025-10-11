@@ -3,8 +3,6 @@
 int main()
 {
     int n, first,lastdigit;
-
-    /* Input number from user */
     printf("Enter any number: ");
     scanf("%d", &n);
 
