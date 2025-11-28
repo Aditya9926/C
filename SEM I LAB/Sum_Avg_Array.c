@@ -1,23 +1,14 @@
 #include <stdio.h>
-
-float getAvg(int arr[], int n) {
-    int sum = 0;
-
-    // Find the sum of all elements
-    for (int i = 0; i < n; i++) {
-        sum += arr[i];
-    }
-    printf("Sum: %d\n", sum);
-    return (float)sum / n;
-}
-
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-  	// Calculate the average of array arr
-    float res = getAvg(arr, n);  
-  	
-    printf("%.2f\n", res);
-    return 0;
+int n, arr[50], sum=0;
+float avg;
+printf("Enter number of elements: ");
+scanf("%d", &n);
+for(int i=0; i<n; i++) {
+scanf("%d", &arr[i]);
+sum += arr[i];
+}
+avg = (float)sum / n;
+printf("Sum = %d, Average = %.2f\n", sum, avg);
+return 0;
 }
